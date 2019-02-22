@@ -16,5 +16,12 @@
             "App\\": "app/",
             "morley\\contact\\": "src/"
         }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "morley\\contact\\ContactServiceProvider"
+            ]
+        }
     }
 }
