@@ -1,0 +1,20 @@
+{
+    "name": "morley/contact",
+    "description": "Send mail and save to our database",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Morls",
+            "email": "moravel752@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "App\\": "app/",
+            "morley\\contact\\": "src/"
+        }
+    }
+}
