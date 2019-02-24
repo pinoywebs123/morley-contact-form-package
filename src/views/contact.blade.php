@@ -12,10 +12,15 @@
     <div class="container">
         <h2 class="text-center">Contact Form</h2>
         <div class="col-md-6 col-md-offset-3">
+            @if(Session::has('suc'))
+                <div class="alert alert-success">
+                    {{Session::get('suc')}}
+                </div>
+            @endif
             <form action="{{route('send')}}" method="POST">
                 <div class="form-group">
                     <label>To</label>
-                    <input type="text" name="to" class="form-control">
+                    <input type="text" name="send_to" class="form-control">
                 </div>
                 <div class="form-group">
                     <label>Message</label>
